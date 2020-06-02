@@ -13,29 +13,8 @@ let calculate = function(input){
         }else{
             actual += el;
         }
-/* trecho substituido
-      switch(el){
-          case '-':
-              ops.push('-');
-              nums.push(parseFloat(actual));
-              actual = '';
-              break;
-          case '+':
-              ops.push('+');
-              nums.push(parseFloat(actual));
-              actual = '';
-              break;
-          case '*':
-              ops.push('*');
-              nums.push(parseFloat(actual));
-              actual = '';
-              break;
-          default:
-              actual += el;
-      }
-      */
-
     });
+
     if(actual !== ''){
         nums.push(parseFloat(actual));
     }
@@ -53,7 +32,6 @@ let calculate = function(input){
         }
         return el;
     });
-
 
 // fim do trecho
 
